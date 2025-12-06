@@ -1,0 +1,85 @@
+{
+  "name": "Medicare Healthcare Analytics",
+  "dataColors": [
+    "#0077B6",
+    "#00B4D8",
+    "#48CAE4",
+    "#90E0EF",
+    "#023E8A",
+    "#03045E",
+    "#0096C7",
+    "#ADE8F4",
+    "#CAF0F8",
+    "#005F73"
+  ],
+  "background": "#F8F9FA",
+  "foreground": "#212121",
+  "tableAccent": "#0077B6",
+  "good": "#2E7D32",
+  "neutral": "#757575",
+  "bad": "#C62828",
+  "maximum": "#0077B6",
+  "center": "#90E0EF",
+  "minimum": "#CAF0F8",
+  "textClasses": {
+    "callout": {
+      "fontSize": 28,
+      "fontFace": "Segoe UI Light",
+      "color": "#0077B6"
+    },
+    "title": {
+      "fontSize": 14,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#212121"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#212121"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#424242"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{"color": {"solid": {"color": "#FFFFFF"}}}],
+        "title": [
+          {
+            "show": true,
+            "fontSize": 12,
+            "fontFamily": "Segoe UI Semibold",
+            "fontColor": {"solid": {"color": "#212121"}}
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [{"color": {"solid": {"color": "#F8F9FA"}}}]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [
+          {
+            "fontSize": 28,
+            "fontFamily": "Segoe UI Light",
+            "color": {"solid": {"color": "#0077B6"}}
+          }
+        ],
+        "categoryLabels": [
+          {
+            "show": true,
+            "fontSize": 10,
+            "fontFamily": "Segoe UI",
+            "color": {"solid": {"color": "#616161"}}
+          }
+        ]
+      }
+    }
+  }
+}

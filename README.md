@@ -98,7 +98,7 @@ powerbi-medicare-analysis/
    - Review the complete model documentation in [`docs/technical/Model_Documentation_Complete.md`](docs/technical/Model_Documentation_Complete.md)
 
 3. **Open in Power BI Desktop**
-   - Connect to your Medicare Inpatient 2017 data source
+   - Connect to your FactMedicareInpatient data source
    - Import the model structure using the documentation
    - Configure data source settings
 
@@ -137,7 +137,7 @@ powerbi-medicare-analysis/
 
 ```
                     Fact Table (Center)
-                Medicare Inpatient 2017
+                FactMedicareInpatient
                     [196,325 rows]
                           │
         ┌─────────────────┼─────────────────┐
@@ -150,7 +150,7 @@ powerbi-medicare-analysis/
 
 ### Key Components
 
-**Fact Table**: Medicare Inpatient 2017
+**Fact Table**: FactMedicareInpatient
 - 196,325 rows (one per Provider-DRG combination)
 - 13 columns including measures and foreign keys
 - 5 calculated columns for dimensional analysis

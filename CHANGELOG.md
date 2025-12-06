@@ -5,6 +5,43 @@ All notable changes to the Medicare Inpatient Cost Analysis Power BI project wil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.0.0] - 2025-12-06
+
+### Changed - Naming Convention Standardization
+- **BREAKING**: All 11 tables renamed to follow Dim/Fact prefix convention
+  - `Medicare Inpatient 2017` → `FactMedicareInpatient`
+  - `Providers` → `DimProvider`
+  - `DRG Dimension` → `DimDRG`
+  - `Payment Range` → `DimPaymentRange`
+  - `Discharge Volume Tier` → `DimVolumeTier`
+  - `Geography` → `DimGeography`
+  - `DRG Medical Categories` → `DimDRGCategory`
+  - `Provider Type Classification` → `DimProviderType`
+  - `Cost Efficiency Categories` → `DimEfficiency`
+  - `Service Intensity Levels` → `DimIntensity`
+  - `Healthcare Market Segments` → `DimMarketSegment`
+
+- **Measures Renamed** (4 measures):
+  - `Total Payments(with Discharges)` → `Total Payments All`
+  - `Percentage Covered by Medicare` → `Medicare Coverage %`
+  - `Unique Providers Count` → `Count Providers`
+  - `Unique DRGs Count` → `Count DRGs`
+
+### Removed
+- `Avg Payment per Discharge` measure (duplicate)
+- `Medicare Coverage Percentage` measure (duplicate)
+
+### Added
+- Naming Convention Implementation documentation
+- Custom Power BI theme (Medicare_Healthcare_Theme.json)
+- Report Design Guide with page-by-page instructions
+- Custom background image (Medicare_Background.png)
+
+### Summary
+- Total measures reduced from 11 to 9 (removed duplicates)
+- 100% naming convention compliance achieved
+- Enterprise-grade naming standards applied
+
 ## [4.0.0] - 2025-12-05
 
 ### Added
@@ -105,6 +142,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Unique Providers Count
 - Unique DRGs Count
 
+---
+
 ## Metadata
 
 ### Data Source Information
@@ -122,70 +161,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Storage Mode**: Import
 - **Total Tables**: 11 (1 fact, 10 dimensions)
 - **Total Columns**: 61 (46 visible, 15 hidden)
-- **Total Measures**: 11
+- **Total Measures**: 9
 - **Total Relationships**: 8 (all active, many-to-one)
-
-### Version Notes
-
-**Version 4.0** represents a major documentation and optimization release with:
-- Complete professional documentation (production-ready)
-- Critical data type fixes (ZIP codes, currency precision)
-- Performance improvements (10-15% size reduction)
-- Enterprise-grade data quality
-
-**Version 3.0** achieved full documentation coverage:
-- 100% of objects documented
-- Inline help for all fields
-- Multiple documentation formats
-- Professional field list presentation
-
-**Version 2.0** established the star schema architecture:
-- Dimensional model design
-- Proper relationship structure
-- Enhanced analytical capabilities
-- Performance optimization foundations
-
-**Version 1.0** created the foundational model:
-- Core data structure
-- Essential measures
-- Basic transformations
-- Initial provider and procedure data
-
----
-
-## Upcoming Features (Roadmap)
-
-### Planned for Version 5.0
-- [ ] Naming convention standardization (32 objects)
-- [ ] Display folder organization for measures
-- [ ] Row-level security templates
-- [ ] Additional quality metrics integration
-- [ ] Multi-year analysis support
-
-### Planned for Version 6.0
-- [ ] Readmission rates analysis
-- [ ] Quality-adjusted cost metrics
-- [ ] Provider network analysis
-- [ ] Market concentration metrics
-- [ ] Benchmark comparisons
-
-### Under Consideration
-- [ ] Real-time data refresh (if available)
-- [ ] Predictive analytics measures
-- [ ] Advanced statistical measures
-- [ ] Integration with quality reporting
-- [ ] Mobile-optimized reports
-
----
-
-## Support and Contributing
-
-For questions, issues, or contributions, please refer to:
-- [README.md](README.md) for project overview
-- [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines
-- [GitHub Issues](../../issues) for bug reports and feature requests
 
 ---
 
 *Changelog maintained by: Healthcare Analytics Team*  
-*Last Updated: December 5, 2025*
+*Last Updated: December 6, 2025*
